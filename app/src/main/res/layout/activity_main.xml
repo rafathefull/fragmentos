@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,22 +8,38 @@
     android:orientation="vertical">
 
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/menu"
         android:name="com.tesipro.com.herramientas.Menu"
-        tools:layout="@layout/fragment_menu">
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_menu"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
     </fragment>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintVertical_bias="0.708"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
         <ImageView
             android:layout_width="@dimen/maximo"
             android:layout_height="@dimen/maximo"
-            android:src="@drawable/herramientas"/>
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/herramientas" />
     </RelativeLayout>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

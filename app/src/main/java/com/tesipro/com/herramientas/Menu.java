@@ -3,7 +3,7 @@ package com.tesipro.com.herramientas;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +15,7 @@ import android.widget.ImageButton;
  */
 public class Menu extends Fragment {
 
-    private  final int[] BOTONESMENU={R.id.linterna, R.id.musica, R.id.nivel};
+    private  final int[] BOTONESMENU={R.id.linterna,  R.id.nivel, R.id.musica};
 
     public Menu() {
         // Required empty public constructor
@@ -43,8 +43,6 @@ public class Menu extends Fragment {
                 }
             });
         }
-
-
 
         return mimenu;
     }
